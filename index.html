@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html lang='en' ng-app='app'>
+
+<head>
+	<meta charset ="utf-8">
+	<title>Yahoo Finance API using Angular JS</title>
+	<!-- CSS -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.css' />
+    <link rel="stylesheet" type="text/css" href="styles/index.css">
+</head>
+
+<body ng-controller="FinanceCtrl">
+    <div class="wrap">
+     	<form method="post" >
+	     	<h2>Enter Symbol:</h2>
+	     	<input type="text" placeholder="e.g GOOG" name="symbol" ng-model="symbol"/>
+	     	<button class="btn btn-primary" ng-click="getData()">Get Price</button>
+     	</form>
+     	<hr>
+     	 <div class="container">
+     	                        {{response.Name}}<br>
+			        			{{response.Bid}}<br>
+			        			{{response.Currency}}<br>
+			        			{{response.StockExchange}}<br>
+			        			{{response.MarketCapitalization}}<br>
+			        			{{response.YearRange}}<br>
+			        			{{response.Ask}}<br>
+			        			{{response.Change}}<br>
+			        			{{response.DaysHigh}}<br>
+			        			{{response.DaysLow}}<br>
+			        			{{response.EarningsShare}}<br>
+			        			{{response.BookValue}}<br>
+			        	
+			        
+     </div>
+     </div>
+    
+ 	<!-- JS -->
+ 	<!-- // <script type="text/javascript" src="bower_components/jquery/dist/jquery.js"></script> -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.1/angular.min.js"></script>
+	<script type="text/javascript" src="controllers/app.js"></script>
+
+</body>
+</html>
