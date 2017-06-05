@@ -8,4 +8,4 @@ e.g. GOOG = Google
 
 Technologies used: HTML5,CSS3,Bootstrap,AngularJS
 
- 
+![Screenshot](screenshot/Stock-Data-Viewerr.png?raw=true "screenshot")
